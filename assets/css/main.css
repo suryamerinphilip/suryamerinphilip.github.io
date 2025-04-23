@@ -1,0 +1,595 @@
+/* Main CSS file */
+
+/* Basic styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: rgb(45, 45, 45);
+    margin: 0;
+    padding: 0;
+    padding-top: 60px;
+}
+
+p > a {
+    color: whitesmoke;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin: 0 5px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+.button {
+    background: #0275b5;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 20px;
+    box-shadow: black;
+}
+
+.button:hover {
+    background: #555;
+}
+
+/* Wrapper styling */
+#wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    padding: 50px 0;
+    padding-bottom: 10px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+    color: whitesmoke;
+}
+
+header p {
+    font-size: 1.2em;
+    color: whitesmoke;
+}
+
+/* Profile styling */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.profile-pic {
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    border: 5px silver double;
+}
+
+/* Navigation styling */
+#nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(113, 113, 113);
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+}
+
+#nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    flex-wrap: wrap;
+}
+
+#nav ul li {
+    margin: 0 10px;
+}
+
+#nav ul li a {
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+#nav ul li a:hover,
+#nav ul li a.active {
+    background: black;
+    color: #fff;
+}
+
+/* Main content styling */
+.main {
+    background: #fff;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main h2 {
+    margin-top: 0;
+    color: #333;
+}
+
+.main p {
+    color: #666;
+}
+
+/* Features list styling */
+.features {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.features > li {
+    flex: 1 1 45%;
+    background: #f9f9f9;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.features > li:hover {
+    transform: scale(1.05);
+}
+
+.features li h3 {
+    margin-top: 0;
+    color: #333;
+}
+
+.features li p {
+    color: #666;
+}
+
+.features li a {
+    text-decoration: none;
+    color: #333;
+}
+
+/* Skills section styling */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-list li {
+    background: #f9f9f9;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.skills-list li:hover {
+    transform: scale(1.1);
+}
+
+/* Certifications section styling */
+.certifications-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.certifications-list li {
+    background: #f9f9f9;
+    margin: 10px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.certifications-list li:hover {
+    transform: scale(1.1);
+}
+
+/* Project styling */
+.projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.project {
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.project h3 {
+    margin-top: 10px;
+    color: #333;
+}
+
+.project p {
+    color: #666;
+}
+
+.project-link {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ddd;
+    color: #333;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.project-link:hover {
+    background: #777;
+    color: #fff;
+}
+
+/* Experience header styling */
+.experience-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.experience-header img {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.experience-info {
+    flex-grow: 1;
+}
+
+.experience-info h3 {
+    margin: 0;
+    color: #333;
+}
+
+.experience-info h4 {
+    margin: 0;
+    color: #666;
+}
+
+.experience-info span {
+    display: block;
+    color: #999;
+}
+
+.experience-details {
+    list-style: disc;
+    padding-left: 20px;
+    color: #666;
+}
+
+/* Awards section styling */
+.awards-list {
+    list-style: none;
+    padding: 0;
+}
+
+.awards-list li {
+    background: #f9f9f9;
+    margin: 0px;
+    padding: 20px;
+    padding-bottom: 0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.awards-list li:hover {
+    transform: scale(1.05);
+}
+
+.awards-list h3 {
+    margin: 0;
+    color: #333;
+}
+
+.awards-list h4 {
+    margin: 0;
+    color: #666;
+}
+
+.awards-list span {
+    display: block;
+    color: #999;
+}
+
+.awards-list p {
+    color: #666;
+}
+
+/* Contact section styling */
+/* Contact section styling */
+#contact {
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 600px;
+    background: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+#contact ul{
+    list-style-type: none;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input[type="email"],
+.contact-form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.contact-form button {
+    padding: 10px;
+    font-size: 16px;
+    background-color: #0275b5;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Toggle button styling */
+#mode-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    z-index: 1001;
+}
+
+#mode-toggle.light-mode {
+    background: #fff;
+    color: #333;
+}
+
+/* Light Mode Styles */
+body.light-mode {
+    background: #fff;
+    color: #333;
+}
+
+body.light-mode p > a {
+    color: #fff;
+}
+
+body.light-mode header h1 {
+    color: #333;
+}
+
+body.light-mode header p {
+    color: #333;
+}
+
+body.light-mode #nav {
+    background-color: #333;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode #nav ul li a {
+    color: white;
+}
+
+body.light-mode #nav ul li a:hover,
+body.light-mode #nav ul li a.active {
+    background: #333;
+    color: #fff;
+}
+
+body.light-mode .main {
+    background: #e9e9e9;
+}
+
+body.light-mode .main h2 {
+    color: #333;
+}
+
+body.light-mode .main p {
+    color: #666;
+}
+
+body.light-mode .features > li {
+    background: #fff;
+}
+
+body.light-mode .features li h3 {
+    color: #333;
+}
+
+body.light-mode .features li p {
+    color: #666;
+}
+
+body.light-mode .features li a {
+    color: #fff;
+}
+
+body.light-mode .skills-list li {
+    background: #fff;
+}
+
+body.light-mode .certifications-list li {
+    background: #fff;
+}
+
+body.light-mode .project {
+    background: #fff;
+}
+
+body.light-mode .project h3 {
+    color: #333;
+}
+
+body.light-mode .project p {
+    color: #666;
+}
+
+body.light-mode .project-link {
+    background: #333;
+    color: #fff;
+}
+
+body.light-mode .experience-info h3 {
+    color: #333;
+}
+
+body.light-mode .experience-info h4 {
+    color: #666;
+}
+
+body.light-mode .experience-info span {
+    color: #999;
+}
+
+body.light-mode .experience-details {
+    color: #666;
+}
+
+body.light-mode .awards-list li {
+    background: #fff;
+}
+
+body.light-mode .awards-list h3 {
+    color: #333;
+}
+
+body.light-mode .awards-list h4 {
+    color: #666;
+}
+
+body.light-mode .awards-list span {
+    color: #999;
+}
+
+body.light-mode .awards-list p {
+    color: #666;
+}
+
+body.light-mode #contact dt {
+    color: #333;
+}
+
+body.light-mode #contact dd {
+    color: #666;
+}
+
+body.light-mode footer {
+    background: #fff;
+    color: #333;
+}
+
+@media screen and (max-width:900px) {
+    #nav {
+        display:none;
+    }
+    #wrapper {
+        padding: 10px;
+    }
+    .features > li {
+        margin: 5px;
+        padding: 5px;
+    }
+    .main{
+        padding: 10px;
+        margin:10px;
+        margin-left: 5px;
+        margin-right: 5px;;
+    }
+    .button {
+        background: #0275b5;
+        color: #fff;
+        padding: 5px 5px;
+        border-radius: 10px;
+        text-decoration: none;
+        margin: 0 10px;
+        font-size: 14px;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    .main p {
+        color: #666;
+        font-size: 16px;
+    }
+}
+
